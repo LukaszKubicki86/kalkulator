@@ -29,7 +29,8 @@ while True:
     if choice in ('1','2','3','4'):
         num1 = float(input("Wpisz pierwsza liczbe: "))
         num2 = float(input("Wpisz druga liczbe: "))
-        logging.info ("Pierwsza liczba {num1}")
+        logging.info ("Pierwsza liczba ")
+        logging.info (num1)
         logging.info (num2)
         if choice == '1':
             print(num1, "+", num2, "=", dodawanie(num1, num2))

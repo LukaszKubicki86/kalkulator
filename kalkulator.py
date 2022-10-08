@@ -1,4 +1,10 @@
 #  funkcja dodawania
+from cgi import print_arguments
+from re import X
+from secrets import choice
+from tkinter import Y
+
+
 def dodawanie (x, y):
     return x + y
 
@@ -14,3 +20,16 @@ def dzielenie (x, y):
     return x / y
 
 print("Jakie działanie chciałbyś wykonać:?")
+print ("1.Dodawanie")
+print ("2. Odejmowanie")
+print ("3. Mnożenie")
+print ("4. Dzielenie")
+
+while True:
+    #wybierz co chcesz zrobić
+    choice = input("Wybierz 1,2,3,4:")
+    if choice in ('1','2','3','4'):
+        num1 = float(input("Wpisz pierwsza liczbe: "))
+        num2 = float(input("Wpisz druga liczbe: "))
+        if choice == '1':
+            print(num1, "+", num2, "=", dodawanie(num1, num2))

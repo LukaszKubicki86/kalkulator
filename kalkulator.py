@@ -30,8 +30,10 @@ while True:
         num1 = float(input("Wpisz pierwsza liczbe: "))
         num2 = float(input("Wpisz druga liczbe: "))
         logging.info (num1)
+        logging.info (num2)
         if choice == '1':
             print(num1, "+", num2, "=", dodawanie(num1, num2))
+            logging.info (dodawanie)
         elif choice == '2':
             print(num1, "-", num2, "=", odejmowanie(num1, num2))
         elif choice == '3':

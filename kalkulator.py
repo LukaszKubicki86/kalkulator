@@ -27,7 +27,7 @@ while True:
         num1 = float(input("Wpisz pierwsza liczbe: "))
         num2 = float(input("Wpisz druga liczbe: "))
         if choice == '1':
-            print(num1, "+", num2, "=", dodawanie(num1, num2))
+            logging.info ("Dodajemy", num1, "do", num2)
         elif choice == '2':
             print(num1, "-", num2, "=", odejmowanie(num1, num2))
         elif choice == '3':

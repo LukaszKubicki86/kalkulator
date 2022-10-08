@@ -33,3 +33,14 @@ while True:
         num2 = float(input("Wpisz druga liczbe: "))
         if choice == '1':
             print(num1, "+", num2, "=", dodawanie(num1, num2))
+        elif choice == '2':
+            print(num1, "-", num2, "=", odejmowanie(num1, num2))
+        elif choice == '3':
+            print(num1, "*", num2, "=", mnozenie(num1, num2))
+        elif choice == '4':
+            print(num1, "/", num2, "=", dzielenie(num1, num2))
+        obliczenia = input("czy chcesz kontynuowac? (Tak/Nie)")
+        if obliczenia == "Nie":
+            break
+    else:
+        print ("Nieprawidlowa wartosc")

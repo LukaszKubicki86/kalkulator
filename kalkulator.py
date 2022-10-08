@@ -1,6 +1,7 @@
 from re import X
 import sys
 import logging
+from unittest.case import doModuleCleanups
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', filename="logfile.log")
 
 def dodawanie (x, y):
@@ -34,12 +35,16 @@ while True:
         logging.info("Twoja druga liczba to {num2}".format(num2=num2))
         if choice == '1':
             print(num1, "+", num2, "=", dodawanie(num1, num2))
+            logging.info('%s wynik dodawania', num1+num2)
         elif choice == '2':
             print(num1, "-", num2, "=", odejmowanie(num1, num2))
+            logging.info('%s wynik odejmowania', num1-num2)
         elif choice == '3':
             print(num1, "*", num2, "=", mnozenie(num1, num2))
+            logging.info('%s wynik mnozenia', num1*num2)
         elif choice == '4':
             print(num1, "/", num2, "=", dzielenie(num1, num2))
+            logging.info('%s wynik dzielenia', num1/num2)
         obliczenia = input("czy chcesz kontynuowac? (Tak/Nie)")
         if obliczenia == "Nie":
             break

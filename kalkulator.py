@@ -26,11 +26,12 @@ print ("4. Dzielenie")
 while True:
     #wybierz co chcesz zrobić
     choice = input("Wybierz 1,2,3,4:")
+    logging.info("Twoja wybor to {choice}".format(choice=choice))
     if choice in ('1','2','3','4'):
         num1 = float(input("Wpisz pierwsza liczbe: "))
         num2 = float(input("Wpisz druga liczbe: "))
-        logging.info ("Pierwsza liczba ",extra=num1)
-        logging.info (num2)
+        logging.info("Twoja pierwsza liczba to {num1}".format(num1=num1))
+        logging.info("Twoja druga liczba to {num2}".format(num2=num2))
         if choice == '1':
             print(num1, "+", num2, "=", dodawanie(num1, num2))
         elif choice == '2':

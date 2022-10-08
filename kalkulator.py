@@ -1,3 +1,4 @@
+from re import X
 import sys
 import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', filename="logfile.log")
@@ -28,8 +29,9 @@ while True:
     if choice in ('1','2','3','4'):
         num1 = float(input("Wpisz pierwsza liczbe: "))
         num2 = float(input("Wpisz druga liczbe: "))
+        logging.info (num1)
         if choice == '1':
-            print(num1, "-", num2, "=", dodawanie(num1, num2))
+            print(num1, "+", num2, "=", dodawanie(num1, num2))
         elif choice == '2':
             print(num1, "-", num2, "=", odejmowanie(num1, num2))
         elif choice == '3':

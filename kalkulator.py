@@ -33,7 +33,7 @@ while True:
         logging.info (num2)
         if choice == '1':
             print(num1, "+", num2, "=", dodawanie(num1, num2))
-            logging.info (dodawanie)
+            logging.info (dodawanie(num1,num2))
         elif choice == '2':
             print(num1, "-", num2, "=", odejmowanie(num1, num2))
         elif choice == '3':

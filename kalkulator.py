@@ -13,4 +13,4 @@ def mnozenie (x, y):
 def dzielenie (x, y):
     return x / y
 
-print ("to jest to")
+print("Jakie działanie chciałbyś wykonać:?")

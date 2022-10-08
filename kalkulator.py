@@ -1,4 +1,6 @@
+import sys
 import logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', filename="logfile.log")
 
 def dodawanie (x, y):
     return x + y
@@ -14,11 +16,11 @@ def mnozenie (x, y):
 def dzielenie (x, y):
     return x / y
 
-logging.info ("Jakie działanie chciałbyś wykonać:?")
-logging.info ("1.Dodawanie")
-logging.info ("2. Odejmowanie")
-logging.info ("3. Mnożenie")
-logging.info ("4. Dzielenie")
+print ("Jakie działanie chciałbyś wykonać:?")
+print ("1.Dodawanie")
+print ("2. Odejmowanie")
+print ("3. Mnożenie")
+print ("4. Dzielenie")
 
 while True:
     #wybierz co chcesz zrobić
@@ -27,7 +29,7 @@ while True:
         num1 = float(input("Wpisz pierwsza liczbe: "))
         num2 = float(input("Wpisz druga liczbe: "))
         if choice == '1':
-            logging.info ("Dodajemy", num1, "do", num2)
+            print(num1, "-", num2, "=", dodawanie(num1, num2))
         elif choice == '2':
             print(num1, "-", num2, "=", odejmowanie(num1, num2))
         elif choice == '3':

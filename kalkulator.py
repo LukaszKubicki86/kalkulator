@@ -1,9 +1,4 @@
-#  funkcja dodawania
-from cgi import print_arguments
-from re import X
-from secrets import choice
-from tkinter import Y
-
+import logging
 
 def dodawanie (x, y):
     return x + y
@@ -19,11 +14,11 @@ def mnozenie (x, y):
 def dzielenie (x, y):
     return x / y
 
-print("Jakie działanie chciałbyś wykonać:?")
-print ("1.Dodawanie")
-print ("2. Odejmowanie")
-print ("3. Mnożenie")
-print ("4. Dzielenie")
+logging.info ("Jakie działanie chciałbyś wykonać:?")
+logging.info ("1.Dodawanie")
+logging.info ("2. Odejmowanie")
+logging.info ("3. Mnożenie")
+logging.info ("4. Dzielenie")
 
 while True:
     #wybierz co chcesz zrobić

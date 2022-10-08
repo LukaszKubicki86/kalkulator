@@ -29,11 +29,10 @@ while True:
     if choice in ('1','2','3','4'):
         num1 = float(input("Wpisz pierwsza liczbe: "))
         num2 = float(input("Wpisz druga liczbe: "))
-        logging.info (num1)
+        logging.info ("Pierwsza liczba {num1}")
         logging.info (num2)
         if choice == '1':
             print(num1, "+", num2, "=", dodawanie(num1, num2))
-            logging.info ("wynik dodawania", {num1}, "i", {num2}, "to ", dodawanie(num1,num2))
         elif choice == '2':
             print(num1, "-", num2, "=", odejmowanie(num1, num2))
         elif choice == '3':

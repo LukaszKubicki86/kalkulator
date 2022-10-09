@@ -18,11 +18,13 @@ def mnozenie (x, y):
 def dzielenie (x, y):
     return x / y
 
+
 print ("Jakie działanie chciałbyś wykonać:?")
 print ("1.Dodawanie")
 print ("2. Odejmowanie")
 print ("3. Mnożenie")
 print ("4. Dzielenie")
+
 
 while True:
     #wybierz co chcesz zrobić
@@ -43,8 +45,17 @@ while True:
             print(num1, "*", num2, "=", mnozenie(num1, num2))
             logging.info('%s wynik mnozenia', num1*num2)
         elif choice == '4':
-            print(num1, "/", num2, "=", dzielenie(num1, num2))
-            logging.info('%s wynik dzielenia', num1/num2)
+            if num2 > 0:
+                print(num1, "/", num2, "=", dzielenie(num1, num2))
+                logging.info('%s wynik mnozenia', num1/num2)
+            else:
+                print("nie dziel przez zero")
+                logging.info("nie dziel przez zero")
+
+           # print(num1, "/", num2, "=", dzielenie(num1, num2))
+           # logging.info('%s wynik dzielenia', num1/num2)
+            
+
         obliczenia = input("czy chcesz kontynuowac? (Tak/Nie)")
         if obliczenia == "Nie":
             break
